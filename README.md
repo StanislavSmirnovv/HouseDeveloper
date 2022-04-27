@@ -1,3 +1,2 @@
-# HouseDeveloper
-1- Разработка сайта и посадка его на CMS 
-2-  Обучаюсь верстке, JS, работе с CMS 
+# HouseDeveloper 
+2-  Обучаюсь CSS, HTML, JS
