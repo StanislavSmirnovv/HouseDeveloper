@@ -57,6 +57,9 @@
 
 /* xs <= Small (sm) */
 @media (max-width: 576px) {
+	.home-slider__heading {
+		font-size: 40px;
+	}
 }
 
 /* === MOBILE FIRST === */
