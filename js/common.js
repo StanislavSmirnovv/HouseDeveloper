@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
+	MicroModal.init({
+		openTrigger: "data-custom-open",
+		closeTrigger: "data-custom-close",
+		disableScroll: true,
+		disableFocus: true,
+		awaitOpenAnimation: true,
+		awaitCloseAnimation: true,
+	});
 	$(".home-slider__heading").each(function () {
 		let text = $(this).text().split(" ");
 		let first = text.shift();
@@ -50,5 +58,14 @@ document.addEventListener("DOMContentLoaded", function () {
 			onlyInViewport: false,
 		},
 		runCallbacksOnInit: true,
+	});
+
+	//Callback list numbers
+	$(".home-callback__list li").each(function () {
+		$(this).html(
+			$(this)
+				.text()
+				.replace(/([0-9.]+)/g, "<span>$1</span>")
+		);
 	});
 });
