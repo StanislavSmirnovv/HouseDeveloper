@@ -12,8 +12,11 @@
 	.top-menu__link {
 		padding: 7.5px 15px;
 	}
-}
 
+	.home-callback__list > * {
+		width: 49%;
+	}
+}
 /* md <= Large (lg) */
 @media (max-width: 992px) {
 	.top-menu {
@@ -47,6 +50,17 @@
 		background-color: rgba(196, 196, 196, 0.075);
 	}
 	.menu-toggle {
+		display: block;
+	}
+
+	.home-callback__list,
+	.home-callback__header {
+		display: none;
+	}
+	.home-callback__text-right {
+		text-align: center;
+	}
+	.home-callback__phone {
 		display: block;
 	}
 }

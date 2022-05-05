@@ -7,6 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		awaitOpenAnimation: true,
 		awaitCloseAnimation: true,
 	});
+	$("[data-custom-open]").click(function () {
+		$(".modal [name=form]").val($(this).data("form"));
+	});
+	$("[data-custom-close]").click(function () {
+		$(".modal [name=form]").val("");
+	});
 	$(".home-slider__heading").each(function () {
 		let text = $(this).text().split(" ");
 		let first = text.shift();

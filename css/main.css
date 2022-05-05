@@ -479,3 +479,47 @@ span.top-menu__link {
 .home-callback__button {
 	margin-top: 20px;
 }
+
+/* MODAL */
+.modal {
+	position: relative;
+	z-index: 1;
+}
+.modal__container {
+	padding: 20px;
+	width: 100%;
+	max-width: 400px;
+	border-radius: var(--radius);
+}
+.modal__title {
+	text-align: center;
+	width: 100%;
+	color: #454545;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 10px 0 20px;
+}
+.modal__close {
+	opacity: 0.4;
+	transition: opacity var(--transition);
+	position: relative;
+	top: -5px;
+}
+.modal__close:hover {
+	opacity: 1;
+}
+.modal__footer {
+	padding: 10px 0;
+	text-align: center;
+}
+
+/* FORM */
+form input,
+form textarea {
+	width: 100%;
+	font-size: 14px;
+	margin: 5px 0;
+	padding: 8px 14px;
+	border-radius: var(--radius-style);
+	border: 1px solid var(--light-div);
+}
