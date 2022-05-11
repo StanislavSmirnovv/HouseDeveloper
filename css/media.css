@@ -63,10 +63,32 @@
 	.home-callback__phone {
 		display: block;
 	}
+
+	.best-item__desc {
+		font-size: 16px;
+	}
+	.best-works__top {
+		padding-top: 40px;
+		padding-bottom: 155px;
+	}
 }
 
 /* sm <= Medium (md) */
 @media (max-width: 768px) {
+	.best-works__lest {
+		display: none;
+	}
+	.best-works__right {
+		flex: 1;
+		margin: 0;
+		padding: 0;
+	}
+	.best-item__desc {
+		font-size: 20px;
+	}
+	.best-works__button-wrapper {
+		margin-top: 15px;
+	}
 }
 
 /* xs <= Small (sm) */
